@@ -1,0 +1,489 @@
+<html>
+<title>Web Page Design</title>
+<head>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Permanent+Marker&display=swap');
+@font-face {
+font-family: "SlimJoe";
+src: url("./SlimJoe.otf");
+}
+body {
+    background: #fff8c2;
+    
+    font-family: 'SlimJoe', cursive;
+    color: #fffdfa;
+    
+}
+.p{
+    z-index: -1;
+    position: fixed;
+    top: 160px;
+    right: -10px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+	font-size: 30px;
+    line-height:14px;
+    justify-content:center;
+    align-content: center;
+    color: #fff8c2;
+	opacity: 0.6;
+}
+.p2{
+    z-index: -1;
+    position: fixed;
+    top: 160px;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+	font-size: 30px;
+    line-height:14px;
+    justify-content:left;
+    align-content: left;
+    color: #fff8c2;
+	opacity: 0.6;
+}
+h1{
+    font-family: 'SlimJoe', sans-serif;
+    font-size:220px;
+    position: fixed;
+    width:150vw;
+    right: -30vw;
+    text-align:left;
+    font-weight:50;
+    color: #fff8c2;
+	opacity: 0.6;
+}
+
+h2 {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size:200px;
+    position: fixed;
+    width:150vw;
+	opacity: 0.6;
+    font-weight:50;
+    color: #fff8c2;
+}
+
+.w2 {
+	text-align:right;
+	right: -1vw;
+	top: -100px;
+}
+.w1 {
+	text-align:left;
+	left: -1vw;
+	top: 300px;
+}
+
+.teste{
+    color: #fff8c2;
+    font-family: 'SlimJoe', sans-serif;
+    font-size:180px;
+    position: fixed;
+    width:150vw;
+    right: -5vw;
+    text-align:right;
+    font-weight:50;
+    top: 250px;
+}
+
+.workshop {
+    font-family: 'Permanent Marker', sans-serif;
+	color:black;
+	text-align: center;
+	position: fixed;
+	font-size: 50px;
+	top: 32vh;
+	right: -25vw;
+	opacity: 0.8;
+}
+.workshop2 {
+    font-family: 'Montserrat', sans-serif;
+	color:black;
+	text-align: center;
+	position: fixed;
+	font-size: 30px;
+	top: 42vh;
+	right: -25vw;
+	opacity: 0.8;
+	letter-spacing: 10px;
+}
+.workshopmob {
+    font-family: 'Permanent Marker', sans-serif;
+	color:black;
+	text-align: center;
+	position: fixed;
+	font-size: 100px;
+	top: 240px;
+	right: -25vw;
+	opacity: 0.8;
+}
+.workshopmob2 {
+    font-family: 'Montserrat', sans-serif;
+	color:black;
+	text-align: center;
+	position: fixed;
+	font-size: 50px;
+	top: 560px;
+	right: -25vw;
+	opacity: 0.8;
+	letter-spacing: 10px;
+}
+
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body:before{
+background: red;
+}
+#lamp {
+  position:relative;
+  width:100vw;
+  height:95vh;
+  overflow:hidden;
+}
+input[name="switch"], input[name="switch"] + label {
+  position:absolute;
+  bottom:3rem;
+  width:4rem;
+  height:4rem;
+}
+input[name="switch"] + label {right:48vw;}
+input[name="switch"] {
+  opacity:0;
+  z-index:9;
+  cursor:pointer;
+}
+input[value="on"] {
+  right:48vw;
+}
+input[value="off"] {
+  right:-4rem;
+}
+input[name="switch"] + label {
+  text-align:center;
+}
+[class*="entypo-"]:before {
+  line-height:4rem;
+  font-size:2.5rem;
+  color:rgba(255,255,255,0.4);
+  font-family:'entypo', sans-serif;
+}
+input[value="on"]:checked {
+  right:-4rem;
+}
+input[value="on"]:checked + input[value="off"] {
+  right:48vw;
+}
+.lamp {
+  position:relative;
+  margin:0 auto;
+  width:.7rem;
+  height:10rem;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                   linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                   linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  background-repeat:no-repeat;
+  background-size:.15rem 8rem, .4rem .8rem, .7rem 2rem;
+  background-position:50% 0, .19rem 8rem, 0 8.8rem;
+}
+.lamp:before, .lamp:after {
+  content:'';
+  position:absolute;
+}
+.lamp:before {
+  left:-1.65rem;
+  bottom:-4rem;
+  width:4rem;
+  height:4rem;
+  border-radius:50%;
+  background:rgba(255,255,255,0.03);
+  box-shadow:inset 2px -2px 10px rgba(255,255,255,0.07);
+  transition:all .15s;
+}
+.gonna-give-light, 
+.gonna-give-light:before{
+  position:absolute;
+}
+.gonna-give-light {
+  top:10.05rem;
+  left:.25rem;
+  width:0;
+  height:1.5rem;
+  border-right:.2rem solid rgba(255,255,255,0.05);
+}
+.gonna-give-light:before {
+  content:'';
+  top:1.5rem;
+  left:-.35rem;
+  width:.9rem;
+  height:.9rem;
+  border-radius:50%;
+  border:.2rem solid rgba(255,255,255,0.05);
+  box-shadow:0px 0px 50px rgba(255,255,255,0);
+}
+input[value="on"]:checked ~ .lamp:before {
+  background:rgba(255,255,255,1);
+  box-shadow:0px 2px 10px rgba(255,255,255,0.8),
+             0px 5px 50px rgba(255,255,255,0.8),
+             0px 8px 80px rgba(255,255,255,0.6),
+             0px 8px 120px rgba(255,255,255,0.6);
+}
+body {background:#2f323c;}
+html, body {
+  width:100%;
+  height:100%;
+}
+
+button {
+z-index: 9999;
+}
+@media screen and (max-width: 1000px){
+#lamp{
+height: 90vh;
+}
+.lamp{
+transform:scale(2.5)
+}
+.workshop{
+transform: scale(1.5)
+}
+.workshop2{
+font-size: 34px;
+}
+input[name="switch"], input[name="switch"] + label{
+bottom: 10rem;
+width: 7rem;
+}
+input[value="on"] {
+  right:43vw;
+}
+input[value="on"]:checked + input[value="off"] {
+  right:43vw;
+}
+input[name="switch"] + label {right:43vw;}
+
+}
+
+img{
+transform: scale(0.9);
+}
+
+
+/*@media screen and (max-width: 810px) {
+  .p, .workshop, .workshop2 {
+    display: none;
+  }
+  .workshopmob, .workshopmob2 {
+	display: block;
+  }
+ }
+@media screen and (min-width: 810px) {
+  .p, .workshop, .workshop2 {
+    display: block;
+  }
+  .workshopmob, .workshopmob2 {
+	display: none;
+  }
+ }
+ */
+.text{
+font-size: 16px;
+opacity: 0.8;
+font-family: 'Montserrat', sans-serif;
+color: #8089a3;
+line-height: 17px;
+}
+</style>
+</head>
+<body>
+<script>
+
+</script>
+<div id="conteudo" hidden>
+<h1>ENCONTRO</h1> 
+<h1 CLASS="teste">DE ESTAGS</h1>
+<h2 class="w1">WORK</h2>
+<h2 class="w2">SHOP</h2>
+<div class="p2">
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>    
+	<p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+    <p>WORKSHOP DE ESTAGS</p>
+</div>
+<div class="p">
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>	
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>    
+	<p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>
+    <p>ENCONTRO DE ESTAGS</p>	
+</div>
+<h1 class="workshop">WORKSHOP DE ESTAGS</h1>
+<h1 class="workshop2">09:00 às 13:00 - 24/03/2020 - G25</h1>
+
+</div>
+
+<div id="lamp">
+
+  <input onclick="(function(){
+document.querySelector('#conteudo').toggleAttribute('hidden');
+document.querySelector('body').style.background = '#ffd024';
+document.querySelector('#img1').toggleAttribute('hidden');
+document.querySelector('#img2').toggleAttribute('hidden');
+})()" type="radio" class="btnLamp" name="switch" value="on" />
+  <input onclick="(function(){
+document.querySelector('#conteudo').toggleAttribute('hidden')
+document.querySelector('body').style.background = '#2f323c';
+document.querySelector('#img1').toggleAttribute('hidden');
+document.querySelector('#img2').toggleAttribute('hidden');
+})()" type="radio" name="switch" value="off" checked="checked"/>
+  <label  for="switch" class="entypo-lamp"><img id="img1" src="./interruptor.png" width="100%"/> <img id="img2" src="./interruptorI.png" width="100%" hidden/></label>
+  
+  <div class="lamp">
+    <div class="gonna-give-light"></div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
