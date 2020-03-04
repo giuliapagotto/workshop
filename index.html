@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 160px;
     right: -10px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     height: 20px;
 	font-size: 30px;
@@ -436,23 +436,23 @@ line-height: 17px;
     <p>ENCONTRO DE ESTAGS</p>	
 </div>
 <h1 class="workshop">WORKSHOP DE ESTAGS</h1>
-<h1 class="workshop2">10:00 às 12:00 - 17/04/2020 - G25</h1>
+<h1 class="workshop2">09:00 às 13:00 - 24/03/2020 - G25</h1>
 
 </div>
 
 <div id="lamp">
 
   <input onclick="(function(){
-document.querySelector('#conteudo').toggleAttribute('hidden');
+document.querySelector('#conteudo').removeAttribute('hidden');
 document.querySelector('body').style.background = '#ffd024';
-document.querySelector('#img1').toggleAttribute('hidden');
-document.querySelector('#img2').toggleAttribute('hidden');
+document.querySelector('#img1').setAttribute('hidden', 'true');
+document.querySelector('#img2').removeAttribute('hidden');
 })()" type="radio" class="btnLamp" name="switch" value="on" />
   <input onclick="(function(){
-document.querySelector('#conteudo').toggleAttribute('hidden')
+document.querySelector('#conteudo').setAttribute('hidden', 'true')
 document.querySelector('body').style.background = '#2f323c';
-document.querySelector('#img1').toggleAttribute('hidden');
-document.querySelector('#img2').toggleAttribute('hidden');
+document.querySelector('#img1').removeAttribute('hidden');
+document.querySelector('#img2').setAttribute('hidden', 'true');
 })()" type="radio" name="switch" value="off" checked="checked"/>
   <label  for="switch" class="entypo-lamp"><img id="img1" src="./interruptor.png" width="100%"/> <img id="img2" src="./interruptorI.png" width="100%" hidden/></label>
   
